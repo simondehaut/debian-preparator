@@ -1,7 +1,5 @@
 #!/bin/bash
 
-su
-
 #/etc/apt/sources.list
 echo "deb http://deb.debian.org/debian/ buster main non-free" > /etc/apt/sources.list
 echo "deb-src http://deb.debian.org/debian/ buster main non-free" >> /etc/apt/sources.list
