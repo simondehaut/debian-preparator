@@ -28,7 +28,9 @@ sed -i -r 's/.*GRUB_TIMEOUT=.*/GRUB_TIMEOUT=0/g' /etc/default/grub
 apt install xfce4 -y
 
 #install: utils
-apt install wpasupplicant -y
+#apt install wpasupplicant -y
+apt install iw -y
+apt install wireless-tools -y
 apt install wget -y
 apt install xfce4-terminal -y
 apt install htop -y
@@ -91,27 +93,27 @@ chmod +x /home/dehaut/.config/autostart/simon_startup_script.sh
 apt install firmware-realtek -y
 
 #touch wpa supplicant config
-touch /etc/wpa_supplicant/wpa_supplicant.conf
+#touch /etc/wpa_supplicant/wpa_supplicant.conf
 
 #make conf
-echo -e "${CYANCOLOR}wifi pwd for freebox_YSFVBB_dehaut :${NOCOLOR}"
-wpa_passphrase freebox_YSFVBB_dehaut >> /etc/wpa_supplicant/wpa_supplicant.conf
+#echo -e "${CYANCOLOR}wifi pwd for freebox_YSFVBB_dehaut :${NOCOLOR}"
+#wpa_passphrase freebox_YSFVBB_dehaut >> /etc/wpa_supplicant/wpa_supplicant.conf
 
 #delete clear pswd
-sed -i -r 's/.*#psk.*/\t#psk/g' /etc/wpa_supplicant/wpa_supplicant.conf
+#sed -i -r 's/.*#psk.*/\t#psk/g' /etc/wpa_supplicant/wpa_supplicant.conf
 
 #get the computed psk
-thePsk=$(cat /etc/wpa_supplicant/wpa_supplicant.conf | xargs | grep -o -P '(?<= psk=).*(?=})' | xargs) 
+#thePsk=$(cat /etc/wpa_supplicant/wpa_supplicant.conf | xargs | grep -o -P '(?<= psk=).*(?=})' | xargs) 
 
 #write config in /etc/network/interfaces
-echo '' >> /etc/network/interfaces
-echo 'allow-hotplug wlp2s0' >> /etc/network/interfaces
-echo 'iface wlp2s0 inet dhcp' >> /etc/network/interfaces
-echo -e '\twpa-ssid freebox_YSFCBB_dehaut' >> /etc/network/interfaces
-echo -e '\twpa-psk _vercingetorix_' >> /etc/network/interfaces
+#echo '' >> /etc/network/interfaces
+#echo 'allow-hotplug wlp2s0' >> /etc/network/interfaces
+#echo 'iface wlp2s0 inet dhcp' >> /etc/network/interfaces
+#echo -e '\twpa-ssid freebox_YSFCBB_dehaut' >> /etc/network/interfaces
+#echo -e '\twpa-psk _vercingetorix_' >> /etc/network/interfaces
 #remplace substring by psk 
-sed -i -e "s/_vercingetorix_/$thePsk/g" /etc/network/interfaces
-chmod 0600 /etc/network/interfaces
+#sed -i -e "s/_vercingetorix_/$thePsk/g" /etc/network/interfaces
+#chmod 0600 /etc/network/interfaces
 
 #clear var
 thePsk=NULL
