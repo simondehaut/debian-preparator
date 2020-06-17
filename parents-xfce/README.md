@@ -2,6 +2,6 @@
 install:
 - debian net install
 - clone this git
-- cp /home/* in home folder
-- run /install.sh
+- chmod +x /install.sh
+- bash /install.sh
 - rm cloned git
