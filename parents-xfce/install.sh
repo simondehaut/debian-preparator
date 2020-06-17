@@ -138,6 +138,9 @@ sed -i -e "s/_vercingetorix_/$thePsk/g" /etc/network/interfaces
 #sed -i -e "s/_vercingetorix_/$thePsk/g" /etc/network/interfaces
 #chmod 0600 /etc/network/interfaces
 
+#miscs
+chown -R dehaut /home/dehaut/{,.}*
+
 #clear var and files
 thePsk=NULL
 rm /home/dehaut/tmp.wpa
