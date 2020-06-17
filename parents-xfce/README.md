@@ -9,5 +9,6 @@ install:
 - `exit`
 - `git clone https://github.com/simondehaut/debian-preparator.git`
 - `chmod +x ~/debian-preparator/parents-xfce/install.sh`
+- `su`
 - `bash ~/debian-preparator/parents-xfce/install.sh`
 - delete cloned git
