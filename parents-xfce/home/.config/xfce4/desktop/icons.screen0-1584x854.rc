@@ -1,0 +1,39 @@
+[xfdesktop-version-4.10.3+-rcfile_format]
+4.10.3+=true
+
+[/home/dehaut/Bureau/firefox-esr.desktop]
+row=1
+col=16
+
+[/home/dehaut/Bureau/scan couleur.desktop]
+row=8
+col=16
+
+[/home/dehaut/Bureau/dehaut.desktop]
+row=0
+col=16
+
+[/home/dehaut/Bureau/scan bw.desktop]
+row=7
+col=16
+
+[/home/dehaut/Bureau/Google Earth.desktop]
+row=6
+col=16
+
+[/home/dehaut/Bureau/libre-office.desktop]
+row=5
+col=16
+
+[/home/dehaut/Bureau/gimp.desktop]
+row=3
+col=16
+
+[/home/dehaut/Bureau/mail.desktop]
+row=4
+col=16
+
+[/home/dehaut/Bureau/org.kde.kolourpaint.desktop]
+row=2
+col=16
+
