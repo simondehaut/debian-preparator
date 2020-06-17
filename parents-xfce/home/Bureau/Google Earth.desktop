@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Google Earth
+Comment=
+Exec=/opt/google/earth/pro/google-earth-pro %f
+Icon=google-earth-pro
+Path=
+Terminal=false
+StartupNotify=false

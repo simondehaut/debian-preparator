@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=scan noir-blanc
+Comment=
+Exec=sh /home/dehaut/.simon/scan_gray.sh
+Icon=printer
+Path=
+Terminal=true
+StartupNotify=false

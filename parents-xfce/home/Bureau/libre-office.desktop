@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Writer
+Comment=
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/libreoffice/program/soffice --file-forwarding org.libreoffice.LibreOffice --writer @@u %U @@
+Icon=ooo-writer
+Path=
+Terminal=false
+StartupNotify=true

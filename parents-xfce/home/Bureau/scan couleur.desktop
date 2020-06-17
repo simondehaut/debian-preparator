@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=scan couleur
+Comment=
+Exec=sh /home/dehaut/.simon/scan_color.sh
+Icon=printer
+Path=
+Terminal=true
+StartupNotify=false
