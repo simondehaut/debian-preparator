@@ -43,7 +43,7 @@ apt install kolourpaint -yclear
 apt install vlc vlc-l10n -y
 
 #install: google earth pro
-wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
 sh -c 'echo "deb [arch=amd64] https://dl.google.com/linux/earth/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 apt update 
 apt install google-earth-pro-stable -y
