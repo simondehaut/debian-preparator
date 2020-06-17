@@ -110,4 +110,4 @@ sed -i -e "s/_vercingetorix_/$thePsk/g" /etc/network/interfaces
 chmod 0600 /etc/network/interfaces
 
 #clear var
-thePsk = NULL
+thePsk=NULL
