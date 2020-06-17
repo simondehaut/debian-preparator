@@ -68,6 +68,7 @@ sed -i -r 's/.*GRUB_TIMEOUT=.*/GRUB_TIMEOUT=0/g' /etc/default/grub
 apt install xfce4 -y
 
 #install: utils
+apt install wget -y
 apt install xfce4-terminal -y
 apt install htop -y
 apt install hplip hplip-gui -y
@@ -85,7 +86,7 @@ apt install vlc vlc-l10n -y
 
 #install: google earth pro
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/earth/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/earth/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 apt update 
 apt install google-earth-pro-stable -y
 
