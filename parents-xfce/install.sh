@@ -5,8 +5,10 @@ su
 #/etc/apt/sources.list
 echo "deb http://deb.debian.org/debian/ buster main non-free" > /etc/apt/sources.list
 echo "deb-src http://deb.debian.org/debian/ buster main non-free" >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
 echo "deb http://security.debian.org/debian-security/ buster/updates main non-free" >> /etc/apt/sources.list
 echo "deb-src http://security.debian.org/debian-security/ buster/updates main non-free" >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
 echo "deb http://deb.debian.org/debian/ buster-updates main non-free" >> /etc/apt/sources.list
 echo "deb-src http://deb.debian.org/debian/ buster-updates main non-free" >> /etc/apt/sources.list
 
