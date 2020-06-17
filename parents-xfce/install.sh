@@ -87,7 +87,8 @@ chmod +x /home/dehaut/Bureau/dehaut.desktop
 chmod +x /home/dehaut/.config/autostart/simon_startup_script.sh
 
 #pci wifi card driver
-apt install firmware-iwlwifi -y
+#apt install firmware-iwlwifi -y
+apt install firmware-realtek -y
 
 #touch wpa supplicant config
 touch /etc/wpa_supplicant/wpa_supplicant.conf
