@@ -1,5 +1,8 @@
 #!/bin/bash
 
+CYANCOLOR='\033[0;36m'
+NOCOLOR='\033[0m'
+
 #/etc/apt/sources.list
 echo "deb http://deb.debian.org/debian/ buster main non-free" > /etc/apt/sources.list
 echo "deb-src http://deb.debian.org/debian/ buster main non-free" >> /etc/apt/sources.list
@@ -90,7 +93,7 @@ apt install firmware-iwlwifi -y
 touch /etc/wpa_supplicant/wpa_supplicant.conf
 
 #make conf
-echo "wifi pwd for freebox_YSFVBB_dehaut :"
+echo -e "${CYANCOLOR}wifi pwd for freebox_YSFVBB_dehaut :${NOCOLOR}"
 wpa_passphrase freebox_YSFVBB_dehaut >> /etc/wpa_supplicant/wpa_supplicant.conf
 
 #delete clear pswd
