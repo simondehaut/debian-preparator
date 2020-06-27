@@ -57,10 +57,10 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install flathub org.libreoffice.LibreOffice -y
 
 #autostart mod : hplip
-if [ ! -f /etc/xdg/autostart/hplip-systray.desktop ]; then
-	mkdir /etc/xdg/autostart/old
-	mv /etc/xdg/autostart/hplip-systray.desktop /etc/xdg/autostart/old/hplip-systray.desktop
-fi
+#if [ ! -f /etc/xdg/autostart/hplip-systray.desktop ]; then
+#	mkdir /etc/xdg/autostart/old
+#	mv /etc/xdg/autostart/hplip-systray.desktop /etc/xdg/autostart/old/hplip-systray.desktop
+#fi
 #if [ ! -f /home/dehaut/autostart/hplip-systray.desktop ]; then
 #	mkdir /home/dehaut/autostart/old
 #	mv /home/dehaut/autostart/hplip-systray.desktop /home/dehaut/autostart/old/hplip-systray.desktop
