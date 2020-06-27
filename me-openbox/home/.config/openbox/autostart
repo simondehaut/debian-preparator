@@ -1,0 +1,5 @@
+nitrogen --restore &
+tint2 &
+xfce4-power-manager &
+redshift &
+volumeicon &
