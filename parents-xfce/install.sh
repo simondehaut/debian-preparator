@@ -38,7 +38,7 @@ apt install mousepad -y
 apt install atril -y
 apt install xarchiver -y
 apt install ristretto -y
-apt install flatpak
+apt install flatpak -y
 
 #install: multimedia
 apt install firefox-esr firefox-esr-l10n-fr -y
