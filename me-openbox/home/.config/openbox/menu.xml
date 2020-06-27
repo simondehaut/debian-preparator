@@ -6,14 +6,9 @@
 				<execute>xfce4-terminal</execute>
 			</action>
 		</item>
-		<item label="nemo">
+		<item label="thunar">
 			<action name="Execute">
-				<execute>nemo</execute>
-			</action>
-		</item>
-		<item label="chrome">
-			<action name="Execute">
-				<execute>google-chrome</execute>
+				<execute>thunar</execute>
 			</action>
 		</item>
 		<item label="mousepad">
@@ -26,11 +21,68 @@
 				<execute>redshift</execute>
 			</action>
 		</item>
-		<item label="scan - xsane">
+		<item label="brave">
 			<action name="Execute">
-				<execute>xsane</execute>
+				<execute>brave-browser</execute>
 			</action>
 		</item>
+		<menu id="root-menu-53126" label="other apps">
+			<item label="vscode">
+				<action name="Execute">
+					<execute>code</execute>
+				</action>
+			</item>
+			<item label="gimp">
+				<action name="Execute">
+					<execute>gimp</execute>
+				</action>
+			</item>
+			<item label="libreoffice">
+				<action name="Execute">
+					<execute>flatpak run org.libreoffice.LibreOffice</execute>
+				</action>
+			</item>
+			<item label="xsane">
+				<action name="Execute">
+					<execute>xsane</execute>
+				</action>
+			</item>
+			<item label="inkscape">
+				<action name="Execute">
+					<execute>inkscape</execute>
+				</action>
+			</item>
+			<item label="scribus">
+				<action name="Execute">
+					<execute>scribus</execute>
+				</action>
+			</item>
+			<item label="kolourpaint">
+				<action name="Execute">
+					<execute>kolourpaint</execute>
+				</action>
+			</item>
+			<item label="filezilla">
+				<action name="Execute">
+					<execute>filezilla</execute>
+				</action>
+			</item>
+			<item label="epiphany-browser">
+				<action name="Execute">
+					<execute>epiphany-browser</execute>
+				</action>
+			</item>
+			<item label="firefox">
+				<action name="Execute">
+					<execute>firefox-esr</execute>
+				</action>
+			</item>
+			<item label="audacity">
+				<action name="Execute">
+					<execute>audacity</execute>
+				</action>
+			</item>
+		</menu>
 		<!-- This requires the presence of the 'menu' package to work -->
 		<separator/>
 		<menu id="/Debian"/>
