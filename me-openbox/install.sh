@@ -106,13 +106,6 @@ curl -sL https://deb.nodesource.com/setup_14.x | bash -
 apt install -y nodejs
 npm install -g peerflix
 
-#set openbox autostart
-echo "nitrogen --restore &" >> /home/nomis/.config/openbox/autostart
-echo "tint2 &" >> /home/nomis/.config/openbox/autostart
-echo "xfce4-power-manager &" >> /home/nomis/.config/openbox/autostart
-echo "redshift &" >> /home/nomis/.config/openbox/autostart
-echo "volumeicon &" >> /home/nomis/.config/openbox/autostart
-
 #grub config
 touch /boot/grub/custom.cfg
 echo "set color_normal=white/black" >> /boot/grub/custom.cfg
@@ -124,11 +117,11 @@ update-grub
 
 #shell
 apt install -y fish
-usermod -s /usr/bin/fish nomis
+#usermod -s /usr/bin/fish nomis
 
 #nemo et mousepad preferences
-dconf write /org/nemo/desktop/show-desktop-icons false
-dconf write /org/nemo/preferences/show-full-path-titles true
+#dconf write /org/nemo/desktop/show-desktop-icons false
+#dconf write /org/nemo/preferences/show-full-path-titles true
 gsettings set org.xfce.mousepad.preferences.view color-scheme 'oblivion'
 
 #interfaces
