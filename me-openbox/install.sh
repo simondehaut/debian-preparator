@@ -44,7 +44,7 @@ apt install obmenu -y
 apt install obsession -y
 
 #x server
-apt install xinit
+apt install xinit -y
 
 #utils
 apt install linux-headers-$(uname -r) -y
@@ -95,11 +95,11 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install flathub org.libreoffice.LibreOffice -y
 
 #brave
-apt install apt-transport-https
+apt install apt-transport-https -y
 curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
 echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | tee /etc/apt/sources.list.d/brave-browser-release.list
 apt update
-apt install brave-browser
+apt install brave-browser -y
 
 #node js & peerflix
 curl -sL https://deb.nodesource.com/setup_14.x | bash -
