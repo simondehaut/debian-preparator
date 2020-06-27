@@ -1,4 +1,7 @@
 # debian preparator for me : openbox
+
+<img src="preview.png" width="70%">
+
 install:
 - debian baremetal net install (dont select "debian desktop environnement")
 - `su`
