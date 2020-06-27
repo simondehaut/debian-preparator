@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="terminal">
+			<action name="Execute">
+				<execute>xfce4-terminal</execute>
+			</action>
+		</item>
+		<item label="nemo">
+			<action name="Execute">
+				<execute>nemo</execute>
+			</action>
+		</item>
+		<item label="chrome">
+			<action name="Execute">
+				<execute>google-chrome</execute>
+			</action>
+		</item>
+		<item label="mousepad">
+			<action name="Execute">
+				<execute>mousepad</execute>
+			</action>
+		</item>
+		<item label="redshift">
+			<action name="Execute">
+				<execute>redshift</execute>
+			</action>
+		</item>
+		<item label="scan - xsane">
+			<action name="Execute">
+				<execute>xsane</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'menu' package to work -->
+		<separator/>
+		<menu id="/Debian"/>
+		<separator/>
+		<menu id="client-list-menu"/>
+		<menu id="root-menu-141136" label="config">
+			<item label="battery - xfce4-power-manager">
+				<action name="Execute">
+					<execute>xfce4-power-manager -c</execute>
+				</action>
+			</item>
+			<!--<item label="wicd - wifi">
+				<action name="Execute">
+					<execute>wicd-gtk</execute>
+				</action>
+			</item>-->
+			<item label="tint2conf">
+				<action name="Execute">
+					<execute>tint2conf</execute>
+				</action>
+			</item>
+			<item label="nitrogen">
+				<action name="Execute">
+					<execute>nitrogen</execute>
+				</action>
+			</item>
+			<item label="lxappearance">
+				<action name="Execute">
+					<execute>lxappearance</execute>
+				</action>
+			</item>
+			<item label="obmenu">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<item label="obconf">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="dconf-editor">
+				<action name="Execute">
+					<execute>dconf-editor</execute>
+				</action>
+			</item>
+			<item label="obmenu -&gt; Reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="root-menu-11029" label="session">
+			<item label="openbox -&gt; Restart">
+				<action name="Restart"/>
+			</item>
+			<item label="openbox -&gt; Exit">
+				<action name="Exit"/>
+			</item>
+			<separator/>
+			<item label="MANAGE">
+				<action name="Execute">
+					<execute>obsession-logout</execute>
+				</action>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>

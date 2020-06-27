@@ -1,0 +1,30 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# usb to ethernet asus adapter config
+allow-hotplug enx9cebe8126fe7
+iface enx9cebe8126fe7 inet dhcp
+
+#wifi config with guessnet package
+mapping wlp3s0
+script /usr/sbin/guessnet-ifupdown
+map timeout 3
+map verbose: true
+map debug: false
+map freebox_YSFCBB_dehaut
+
+iface freebox_YSFCBB_dehaut inet dhcp
+#wpa-conf managed
+#wpa-ap-scan 1
+#wpa-scan-ssid 1
+wpa-ssid freebox_YSFCBB_dehaut
+#wpa-key-mgmt WPA-PSK
+wpa-psk _vercingetorix_
+test-wireless essid freebox_YSFCBB_dehaut
+

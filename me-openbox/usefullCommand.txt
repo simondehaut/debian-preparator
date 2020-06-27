@@ -1,0 +1,23 @@
+su
+apt install guessnet
+
+chmod 0600 /etc/network/interfaces
+
+#fill the config file with the "interfacesConfig.txt" content
+
+
+#turn on or turn off wifi interface
+ifdown wlp3s0
+ifup wlp3s0
+
+#scan wifi (full info)
+iwlist scan
+
+#scan wifi (minimal)
+iwlist scan | grep ESSID
+
+
+#ajouter wifi :
+#modifier /etc/network/interfaces
+#ajouter le essid du réseau sur la ligne map ESSID1 ESSID2 ...
+#ajouter un bloc en suivant les modèles déjà présents
