@@ -1,6 +1,6 @@
 # debian preparator for parents : xfce
 install:
-- debian net install
+- debian baremetal net install (dont select "debian desktop environnement")
 - `su`
 - `echo 'deb http://deb.debian.org/debian/ buster main' > /etc/apt/sources.list`
 - `echo 'deb-src http://deb.debian.org/debian/ buster main' > /etc/apt/sources.list`
