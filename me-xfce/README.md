@@ -1,5 +1,7 @@
 # debian preparator for me : xfce
 
+<img src="preview.png" width="70%">
+
 install:
 - debian baremetal net install (dont select "debian desktop environnement")
 - `su`
