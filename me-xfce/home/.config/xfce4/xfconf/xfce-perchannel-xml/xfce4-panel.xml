@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <value type="int" value="3"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=8;x=154;y=1063"/>
+      <property name="length" type="uint" value="1"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="24"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="40"/>
+        <value type="int" value="6"/>
+        <value type="int" value="1"/>
+        <value type="int" value="2"/>
+        <value type="int" value="44"/>
+        <value type="int" value="45"/>
+      </property>
+      <property name="mode" type="uint" value="0"/>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="background-alpha" type="uint" value="100"/>
+      <property name="disable-struts" type="bool" value="false"/>
+      <property name="nrows" type="uint" value="1"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="background-color" type="array">
+        <value type="uint" value="13107"/>
+        <value type="uint" value="14649"/>
+        <value type="uint" value="15163"/>
+        <value type="uint" value="65535"/>
+      </property>
+      <property name="leave-opacity" type="uint" value="100"/>
+    </property>
+    <property name="panel-3" type="empty">
+      <property name="position" type="string" value="p=4;x=1602;y=1067"/>
+      <property name="size" type="uint" value="24"/>
+      <property name="length" type="uint" value="1"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="41"/>
+      </property>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="background-color" type="array">
+        <value type="uint" value="13107"/>
+        <value type="uint" value="14649"/>
+        <value type="uint" value="15163"/>
+        <value type="uint" value="65535"/>
+      </property>
+      <property name="background-alpha" type="uint" value="100"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-6" type="string" value="systray">
+      <property name="names-visible" type="array">
+        <value type="string" value="applet networkmanager"/>
+        <value type="string" value="gestionnaire de tâches"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="blueman-applet"/>
+      </property>
+    </property>
+    <property name="plugin-40" type="string" value="actions"/>
+    <property name="plugin-41" type="string" value="tasklist">
+      <property name="show-labels" type="bool" value="true"/>
+      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="show-wireframes" type="bool" value="false"/>
+      <property name="window-scrolling" type="bool" value="false"/>
+      <property name="show-only-minimized" type="bool" value="false"/>
+      <property name="include-all-workspaces" type="bool" value="true"/>
+      <property name="grouping" type="uint" value="0"/>
+    </property>
+    <property name="plugin-44" type="string" value="whiskermenu"/>
+    <property name="plugin-45" type="string" value="showdesktop"/>
+    <property name="plugin-1" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chrome.instance1000;chrome.instance1037;chrome.instance1911;chrome.instance2811;chrome.instance6006;chrome.instance6945;chrome.instance969;chrome.instance973;chrome.instance976"/>
+    </property>
+    <property name="plugin-2" type="string" value="clock"/>
+  </property>
+</channel>

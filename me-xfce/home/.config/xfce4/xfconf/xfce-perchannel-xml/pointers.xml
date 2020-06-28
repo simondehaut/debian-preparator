@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="pointers" version="1.0">
+  <property name="Atmel_Atmel_maXTouch_Digitizer" type="empty">
+    <property name="Properties" type="empty">
+      <property name="Device_Enabled" type="int" value="0"/>
+    </property>
+  </property>
+  <property name="ETPS2_Elantech_Touchpad" type="empty">
+    <property name="RightHanded" type="bool" value="true"/>
+    <property name="Threshold" type="int" value="6"/>
+    <property name="Acceleration" type="double" value="3.000000"/>
+    <property name="ReverseScrolling" type="bool" value="true"/>
+    <property name="Properties" type="empty">
+      <property name="Device_Enabled" type="int" value="1"/>
+    </property>
+  </property>
+  <property name="Logitech_K270" type="empty">
+    <property name="RightHanded" type="bool" value="true"/>
+    <property name="ReverseScrolling" type="bool" value="false"/>
+    <property name="Threshold" type="int" value="4"/>
+    <property name="Acceleration" type="double" value="2.000000"/>
+  </property>
+</channel>
