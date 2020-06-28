@@ -23,6 +23,10 @@ echo "export PATH=/usr/local/sbin:/usr/sbin:/sbin:$PATH" >> ~/.bashrc
 #install: DE
 apt install xfce4 -y
 
+#install : xcfce : miscs
+#pkg list for xfce4-goodies : https://packages.debian.org/buster/xfce4-goodies
+apt install xfce4-goodies -y
+
 #utils
 apt install linux-headers-$(uname -r) -y
 apt install software-properties-common -y
@@ -43,7 +47,6 @@ apt install -y build-essential
 apt install -y curl wget
 apt install -y htop
 apt install -y kolourpaint
-apt install -y mousepad
 apt install -y xsane
 apt install -y xbacklight
 apt install -y vlc vlc-l10n
