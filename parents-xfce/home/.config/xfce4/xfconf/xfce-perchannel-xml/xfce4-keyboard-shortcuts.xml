@@ -41,6 +41,7 @@
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Super&gt;a" type="string" value="xfce4-popup-applicationsmenu"/>
+      <property name="Print" type="string" value="bash /home/dehaut/.simon/screenshot.sh"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

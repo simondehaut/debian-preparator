@@ -13,6 +13,9 @@ echo "" >> /etc/apt/sources.list
 echo "deb http://deb.debian.org/debian/ buster-updates main non-free" >> /etc/apt/sources.list
 echo "deb-src http://deb.debian.org/debian/ buster-updates main non-free" >> /etc/apt/sources.list
 
+#add x86 arch
+dpkg --add-architecture i386
+
 #update & upgrade
 apt update
 apt upgrade -y
@@ -39,12 +42,29 @@ apt install atril -y
 apt install xarchiver -y
 apt install ristretto -y
 apt install flatpak -y
+apt install scrot -y
+apt install pdfsam -y
+
+#install and config firewall
+apt install ufw -y
+systemctl enable ufw
+ufw default deny incoming
+ufw default allow outgoing
+
+#enable ssd trim timer
+systemctl enable fstrim.timer
 
 #install: multimedia
 apt install firefox-esr firefox-esr-l10n-fr -y
 apt install gimp -y
 apt install kolourpaint -y
 apt install vlc vlc-l10n -y
+
+#install: wine
+apt install wine wine32 wine64 libwine libwine:i386 fonts-wine -y
+apt install wine32-preloader wine64-preloader wine32-tools wine64-tools libwine-dev wine-binfmt -y
+apt install winetricks -y
+apt install zenity -y
 
 #install: google earth pro
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
@@ -71,6 +91,7 @@ mkdir /home/dehaut/doc
 mkdir /home/dehaut/doc/scan
 mkdir /home/dehaut/doc/images
 mkdir /home/dehaut/doc/téléchargements
+mkdir /home/dehaut/doc/captures_ecran
 
 #copy files from git to dehaut home folder and init
 cp -R /home/dehaut/debian-preparator/parents-xfce/home/{.,}* /home/dehaut/
@@ -86,6 +107,7 @@ chmod +x /home/dehaut/Bureau/gimp.desktop
 chmod +x /home/dehaut/Bureau/Firefox
 chmod +x /home/dehaut/Bureau/dehaut.desktop
 chmod +x /home/dehaut/.config/autostart/simon_startup_script.sh
+chmod +x /home/dehaut/.simon/screenshot.sh
 
 #pci wifi card driver
 #apt install firmware-iwlwifi -y

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Pinball
+Exec=env WINEPREFIX="/home/dehaut/.wine" wine-stable C:\\\\Program\\ Files\\ \\(x86\\)\\\\Microsoft\\ Games\\\\Pinball\\\\pinball.exe 
+Type=Application
+StartupNotify=true
+Path=/home/dehaut/.wine/dosdevices/c:/Program Files (x86)/Microsoft Games/Pinball
+Icon=1F9E_pinball.0
+StartupWMClass=pinball.exe

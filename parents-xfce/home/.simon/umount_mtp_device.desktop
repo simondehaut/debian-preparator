@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ejecter telephone
+Comment=
+Exec=sh /home/dehaut/.simon/umount_mtp_device.sh
+Icon=media-eject
+Path=
+Terminal=true
+StartupNotify=false

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ouvrir telephone
+Comment=
+Exec=sh /home/dehaut/.simon/mount_mtp_device.sh
+Icon=smartphone
+Path=
+Terminal=true
+StartupNotify=false
