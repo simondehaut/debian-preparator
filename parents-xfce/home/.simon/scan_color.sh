@@ -12,4 +12,6 @@ fi
 
 cd ~/doc/scan
 
+hp-probe -busb
+
 hp-scan --device=hpaio:/usb/Deskjet_3520_series?serial=CN27B1275D05SY --resolution=300 --mode=color --compression=jpeg
