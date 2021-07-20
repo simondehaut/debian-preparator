@@ -72,6 +72,11 @@ sh -c 'echo "deb [arch=amd64] https://dl.google.com/linux/earth/deb/ stable main
 apt update 
 apt install google-earth-pro-stable -y
 
+#install: teamviewer
+wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+apt install ./teamviewer_amd64.deb
+rm ./teamviewer_amd64.deb
+
 #libre office
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub org.libreoffice.LibreOffice -y
