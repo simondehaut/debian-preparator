@@ -113,6 +113,9 @@ chmod +x /home/dehaut/Bureau/Firefox
 chmod +x /home/dehaut/Bureau/dehaut.desktop
 chmod +x /home/dehaut/.config/autostart/simon_startup_script.sh
 chmod +x /home/dehaut/.simon/screenshot.sh
+chmod +x /home/dehaut/.simon/open_audio_cd_vlc.sh
+chmod +x /home/dehaut/Bureau/lecteur_cd.desktop
+chmod +x /home/dehaut/Bureau/teamviewer.desktop
 
 #pci wifi card driver
 #apt install firmware-iwlwifi -y
