@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Teamviewer
+Comment=
+Exec=/usr/bin/teamviewer
+Icon=/opt/teamviewer/tv_bin/desktop/teamviewer_256.png
+Path=
+Terminal=false
+StartupNotify=true
