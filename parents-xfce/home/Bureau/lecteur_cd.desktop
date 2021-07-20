@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=lecteur cd
+Comment=
+Exec=sh /home/dehaut/.simon/open_audio_cd_vlc.sh
+Icon=media-optical
+Path=
+Terminal=true
+StartupNotify=false
